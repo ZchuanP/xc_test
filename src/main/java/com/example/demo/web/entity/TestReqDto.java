@@ -12,7 +12,7 @@ public class TestReqDto {
     /**
      * 年龄
      */
-    private int age;
+    private Integer age;
 
     public String getName() {
         return name;
@@ -26,11 +26,11 @@ public class TestReqDto {
 
     public void setEmail(String email) { this.email = email; }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }
