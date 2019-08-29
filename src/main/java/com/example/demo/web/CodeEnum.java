@@ -2,7 +2,7 @@ package com.example.demo.web;
 
 public enum CodeEnum {
 
-    SUCCESS("00000","处理成功"),
+    SUCCESS("100","处理成功"),
     FAIL("500","必填项未填写");
 
     private String code;

@@ -6,9 +6,13 @@ public class TestReqDto {
      */
     private String name;
     /**
-     * 城市
+     * 邮箱
      */
-    private String city;
+    private String email;
+    /**
+     * 年龄
+     */
+    private int age;
 
     public String getName() {
         return name;
@@ -18,11 +22,15 @@ public class TestReqDto {
         this.name = name;
     }
 
-    public String getCity() {
-        return city;
+    public String getEmail() { return email; }
+
+    public void setEmail(String email) { this.email = email; }
+
+    public int getAge() {
+        return age;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setAge(int age) {
+        this.age = age;
     }
 }

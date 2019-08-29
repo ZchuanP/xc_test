@@ -13,12 +13,14 @@ public class DemoController {
     public Result demoTest(@RequestBody TestReqDto testReqDto){
 
         Result result = new Result();
-        if(null == testReqDto || testReqDto.getName().isEmpty() || testReqDto.getCity().isEmpty()){
+        if(null == testReqDto || testReqDto.getName().isEmpty() || testReqDto.getEmail().isEmpty() || String.valueOf(testReqDto.getAge()).isEmpty()){
             result.setCode(CodeEnum.FAIL.getCode());
             result.setMsg(CodeEnum.FAIL.getMessage());
             return result;
         }else{
-            result.setData("The student is named ："+testReqDto.getName()+" "+"He conmes from ："+testReqDto.getCity());
+            result.setCode(CodeEnum.SUCCESS.getCode());
+            result.setMsg(CodeEnum.SUCCESS.getMessage());
+            result.setData("The student is named ：" + testReqDto.getName() + ";" +"His email is ："+testReqDto.getEmail() + ";"+"His age is:"+testReqDto.getAge());
         }
         return result;
     }
