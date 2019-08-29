@@ -18,7 +18,7 @@ public class DemoController {
             result.setMsg(CodeEnum.FAIL.getMessage());
             return result;
         }else{
-            result.setData("我的名字是："+testReqDto.getName()+" "+"我来自："+testReqDto.getCity());
+            result.setData("The student is named ："+testReqDto.getName()+" "+"He conmes from ："+testReqDto.getCity());
         }
         return result;
     }
